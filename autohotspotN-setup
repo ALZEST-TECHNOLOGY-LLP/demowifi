@@ -129,10 +129,10 @@ fi
 
 #install autohotspot script
 cd $HOME/temp
-wget http://www.raspberryconnect.com/images/autohotspotN/autohotspotn-95-4/autohotspotN.txt
+wget https://raw.githubusercontent.com/ALZEST-TECHNOLOGY-LLP/demowifi/main/autowificheck.txt
 #mod ip address for our custom setup
-sed -i 's/192.168.50.5/10.10.10.10/' autohotspotN.txt
-mv autohotspotN.txt /usr/bin/autohotspotN
+sed -i 's/192.168.50.5/10.10.10.10/' autowificheck.txt
+mv autowificheck.txt /usr/bin/autohotspotN
 chmod +x /usr/bin/autohotspotN
 
 #shackwifi function
